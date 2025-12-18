@@ -35,3 +35,4 @@ Automatically emits `src/solutions.zig` with updated solutions list.
 3. Visualization
 4. Improved solution interface
 5. Setting user-email for convenience of adventofcode.com admins
+6. Code de-clutter
