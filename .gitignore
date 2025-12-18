@@ -2,3 +2,4 @@ input/
 .zig-cache/
 zig-out/
 src/solutions.zig
+

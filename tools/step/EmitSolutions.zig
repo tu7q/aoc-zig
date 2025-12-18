@@ -69,6 +69,7 @@ fn write_imports(self: *EmitSolutions, writer: *std.Io.Writer) !void {
         \\const aoc = @import("tools").aoc;
         \\const AocSolution = aoc.Solution;
         \\const AocProblem = aoc.Problem;
+        \\
     , .{});
 }
 

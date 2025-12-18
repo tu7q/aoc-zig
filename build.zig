@@ -50,6 +50,15 @@ pub fn build(b: *Build) void {
     }
     const run_step = b.step("run", "Run the aoc runner");
     run_step.dependOn(&run_exe.step);
+
+    const install_docs = b.addInstallDirectory(.{
+        .source_dir = exe.getEmittedDocs(),
+        .install_dir = .prefix,
+        .install_subdir = "docs",
+    });
+
+    const docs_step = b.step("docs", "Install docs into zig-out/docs");
+    docs_step.dependOn(&install_docs.step);
 }
 
 pub fn unavailable(comptime fmt: []const u8, args: anytype) fn (*Step, Step.MakeOptions) anyerror!void {
