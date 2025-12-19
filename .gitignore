@@ -1,5 +1,5 @@
 input/
 .zig-cache/
 zig-out/
-solutions.zig
+src/solutions.zig
 
